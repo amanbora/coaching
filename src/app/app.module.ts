@@ -7,6 +7,7 @@ import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { TeachPortComponent } from './pages/teach-port/teach-port.component';
 import { BossPortComponent } from './pages/boss-port/boss-port.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
     SignInComponent,
     TeachPortComponent,
     BossPortComponent,
-    SignUpComponent
+    SignUpComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
