@@ -8,6 +8,8 @@ import { TeachPortComponent } from './pages/teach-port/teach-port.component';
 import { BossPortComponent } from './pages/boss-port/boss-port.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { PieComponent } from './pie/pie.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     TeachPortComponent,
     BossPortComponent,
     SignUpComponent,
-    NavbarComponent
+    NavbarComponent,
+    ScheduleComponent,
+    PieComponent
   ],
   imports: [
     BrowserModule,

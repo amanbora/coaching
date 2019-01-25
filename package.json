@@ -24,6 +24,8 @@
     "animate.css": "^3.7.0",
     "animsition": "^4.0.2",
     "bootstrap": "^4.2.1",
+    "canvasjs": "^1.8.1",
+    "chart.js": "^2.7.3",
     "core-js": "^2.5.4",
     "daterangepicker": "^3.0.3",
     "hamburgers": "^1.1.3",
