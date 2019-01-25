@@ -1,0 +1,13 @@
+
+
+    <select [(ngModel)]="selectedSubject">
+        <option *ngFor="let subject of subjects">{{subject}}</option>
+    </select>
+    <div *ngFor="let teacher of getAvailableTeachers()">
+            <ul>
+                    <li>{{teacher.name}}</li>
+            
+                </ul>
+    </div>
+     
+   

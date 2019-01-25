@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { User } from 'src/app/shared/models/teacher.model';
+import { ScheduleUpdateService } from 'src/app/shared/services/schedule-update.service';
 
 @Component({
   selector: 'app-boss-port',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BossPortComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private auth: AngularFireAuth, private scheduleService: ScheduleUpdateService) { }
+  allTeachers: Array<User> = [];
   ngOnInit() {
+    this.getAllTeachers();
+  }
+  getAllTeachers() {
+    this.scheduleService.getTeacherList().then(res => {
+      this.allTeachers = res;
+      debugger;
+    });
   }
 
 }

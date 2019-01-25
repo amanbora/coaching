@@ -40,7 +40,14 @@
               
             ],
             "scripts": [
-              "node_modules/canvasjs/dist/canvasjs.min.js"
+              "node_modules/canvasjs/dist/canvasjs.min.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/select2/dist/js/select2.min.js",
+              "./node_modules/animsition/dist/js/animsition.min.js",
+              "./node_modules/daterangepicker/moment.min.js",
+              "./node_modules/daterangepicker/daterangepicker.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/mm.js"
             ]
           },
           "configurations": {

@@ -7,23 +7,29 @@ button{
         padding: 24px 24px 24px 24px;
         margin-right: 100px;
         border-radius: 20px;
+        border-width: 20px;
 }
 
 .coa{
-        background-color: red;
+        background-color: aliceblue;
 }
 
 .stu{
-        background-color: blue;
+        background-color: aliceblue;
 }
 .sch{
-        background-color: green;
+        background-color: aliceblue;
 }
 
 .att{
-        background-color: yellow;
+        background-color: aliceblue;
 }
 
 .admin{
         margin-top: 50 px;
+}
+.first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }

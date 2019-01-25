@@ -18,267 +18,25 @@
         <th>Day</th>
         <th>First Class</th>
         <th>Second Class</th>
-        <th>Third Class</th>
-        <th>Fourth Class</th>
         <!-- <th>Country</th> -->
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Monday</td>
-        <td >
+      <tr *ngFor="let workingDay of working_days">
+        <td>{{workingDay}}</td>
+        <td *ngFor="let class of classes">
           
            
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Phy</a></li>
-                  <li><a href="#">CHEM</a></li>
-                  <li><a href="#">MAT</a></li>
-                </ul>
+            <div class="dropdown" >
+              <app-subject-dropdown [workingDay]="workingDay" [session]="class"></app-subject-dropdown>
               </div>
             
 
-        </td>
-        <td>
-          
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Phy</a></li>
-                    <li><a href="#">CHEM</a></li>
-                    <li><a href="#">MAT</a></li>
-                </ul>
-              </div>
-        </td>
-        <td>
-          
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-               </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Phy</a></li>
-                    <li><a href="#">CHEM</a></li>
-                    <li><a href="#">MAT</a></li>
-                </ul>
-              </div>
-        </td>
-        <td>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-               </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Phy</a></li>
-                    <li><a href="#">CHEM</a></li>
-                    <li><a href="#">MAT</a></li>
-                </ul>
-              </div>
         </td>
         
             
       </tr>
 
-      <tr>
-          <td>Tuesday</td>
-          <td>
-              <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                  </button>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Phy</a></li>
-                      <li><a href="#">CHEM</a></li>
-                      <li><a href="#">MAT</a></li>
-                  </ul>
-                </div>
-          </td>
-          <td>
-              <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                  </button>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Phy</a></li>
-                      <li><a href="#">CHEM</a></li>
-                      <li><a href="#">MAT</a></li>
-                  </ul>
-                </div>
-          </td>
-          <td>
-              <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                  </button>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Phy</a></li>
-                      <li><a href="#">CHEM</a></li>
-                      <li><a href="#">MAT</a></li>
-                  </ul>
-                </div>
-          </td>
-          <td>
-              <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                  </button>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Phy</a></li>
-                      <li><a href="#">CHEM</a></li>
-                      <li><a href="#">MAT</a></li>
-                  </ul>
-                </div>
-          </td>
-          
-        </tr>
-
-        <tr>
-            <td>Wednesday</td>
-            <td>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Phy</a></li>
-                        <li><a href="#">CHEM</a></li>
-                        <li><a href="#">MAT</a></li>
-                    </ul>
-                  </div>
-            </td>
-            <td>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Phy</a></li>
-                        <li><a href="#">CHEM</a></li>
-                        <li><a href="#">MAT</a></li>
-                    </ul>
-                  </div>
-            </td>
-            <td>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Phy</a></li>
-                        <li><a href="#">CHEM</a></li>
-                        <li><a href="#">MAT</a></li>
-                    </ul>
-                  </div>
-              
-            </td>
-            <td>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Phy</a></li>
-                        <li><a href="#">CHEM</a></li>
-                        <li><a href="#">MAT</a></li>
-                    </ul>
-                  </div>
-            </td>
-            
-          </tr>
-
-          <tr>
-              <td>Thursday</td>
-              <td>
-                  <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                      </button>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Phy</a></li>
-                          <li><a href="#">CHEM</a></li>
-                          <li><a href="#">MAT</a></li>
-                      </ul>
-                    </div>
-              </td>
-              <td>
-                  <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                      </button>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Phy</a></li>
-                          <li><a href="#">CHEM</a></li>
-                          <li><a href="#">MAT</a></li>
-                      </ul>
-                    </div>
-                  </td>
-              <td>
-                
-                  <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                      </button>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Phy</a></li>
-                          <li><a href="#">CHEM</a></li>
-                          <li><a href="#">MAT</a></li>
-                      </ul>
-                    </div>
-              </td>
-              <td>
-                
-                  <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                      </button>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Phy</a></li>
-                          <li><a href="#">CHEM</a></li>
-                          <li><a href="#">MAT</a></li>
-                      </ul>
-                    </div>
-              </td>
-              
-            </tr>
-
-            <tr>
-                <td>Friday</td>
-                <td>
-                  
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Suject
-                       </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Phy</a></li>
-                            <li><a href="#">CHEM</a></li>
-                            <li><a href="#">MAT</a></li>
-                        </ul>
-                      </div>
-                </td>
-                <td>
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Phy</a></li>
-                            <li><a href="#">CHEM</a></li>
-                            <li><a href="#">MAT</a></li>
-                        </ul>
-                      </div>
-                </td>
-                <td>
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                      </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Phy</a></li>
-                            <li><a href="#">CHEM</a></li>
-                            <li><a href="#">MAT</a></li>
-                        </ul>
-                      </div>
-                </td>
-                <td>
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
-                       </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Phy</a></li>
-                            <li><a href="#">CHEM</a></li>
-                            <li><a href="#">MAT</a></li>
-                        </ul>
-                      </div>
-                </td>
-                
-              </tr>
 
     </tbody>
 
@@ -289,5 +47,10 @@
   
 </div>
 </div>
+
+
 </body>
+
 </html>
+
+

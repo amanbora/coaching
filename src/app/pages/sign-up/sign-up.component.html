@@ -1,0 +1,18 @@
+<form [formGroup]="signUpForm" (ngSubmit)="signUp($event)">
+    <input type="text" formControlName="email">
+    <input type="password" formControlName="password">
+    <input type="text" formControlName="name">
+    
+    <select formControlName="accessLevel">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="admin">Admin</option>
+    </select>
+    <select formControlName="subject">
+            <option value="PHYSICS">Physics</option>
+            <option value="CHEMISTRY">Chemistry</option>
+            <option value="MATHS">Maths</option>
+        </select>
+    <button type="submit">Submit</button>
+
+</form>

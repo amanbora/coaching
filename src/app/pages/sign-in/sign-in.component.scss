@@ -2,24 +2,18 @@
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
 @font-face {
-    font-family: OpenSans-Regular;
-    // src: url('fonts/OpenSans/OpenSans-Regular.ttf'); 
+    font-family: Arial, Helvetica, sans-serif;
+  
   }
   
   @font-face {
-    font-family: OpenSans-Bold;
-    // src: url('fonts/OpenSans/OpenSans-Bold.ttf'); 
+    font-family: Arial, Helvetica, sans-serif;
+  
   }
   
   
-  
-  
-  /*//////////////////////////////////////////////////////////////////
-  [ RESTYLE TAG ]*/
+
   
   * {
       margin: 0px; 
@@ -29,12 +23,12 @@
   
   body, html {
       height: 100%;
-      font-family: OpenSans-Regular, sans-serif;
+      font-family:  sans-serif;
   }
   
   /*---------------------------------------------*/
   a {
-      font-family: OpenSans-Regular;
+      font-family: sans-serif;
       font-size: 14px;
       line-height: 1.7;
       color: #666666;
@@ -60,7 +54,7 @@
   }
   
   p {
-      font-family: OpenSans-Regular;
+      font-family: sans-serif;
       font-size: 14px;
       line-height: 1.7;
       color: #666666;
@@ -135,7 +129,7 @@
   /*==================================================================
   [ Text ]*/
   .txt1 {
-    font-family: OpenSans-Regular;
+    font-family: sans-serif;
     font-size: 13px;
     line-height: 1.4;
     color: #cccccc;
@@ -193,7 +187,7 @@
   .login100-form-title {
     width: 100%;
     display: block;
-    font-family: OpenSans-Regular;
+    font-family: sans-serif;
     font-size: 30px;
     color: #fefefe;
     line-height: 1.2;
@@ -232,7 +226,7 @@
   }
   
   .label-input100 {
-    font-family: OpenSans-Bold;
+    font-family: sans-serif;
     font-size: 15px;
     color: #555555;
     line-height: 1.2;
@@ -252,7 +246,7 @@
   }
   
   .input100 {
-    font-family: OpenSans-Bold;
+    font-family: sans-serif;
     font-size: 15px;
     color: #555555;
     line-height: 1.2;
@@ -308,7 +302,7 @@
   }
   
   .login100-form-btn {
-    font-family: OpenSans-Bold;
+    font-family: sans-serif;
     font-size: 15px;
     color: #fff;
     line-height: 1.2;
@@ -442,8 +436,6 @@
   
   
   
-  /*//////////////////////////////////////////////////////////////////
-  [ Responsive ]*/
   @media (max-width: 576px) {
     .wrap-input100 {
       width: 100%;

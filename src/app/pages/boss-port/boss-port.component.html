@@ -1,3 +1,11 @@
-<p>
-  boss-port works!
-</p>
+<p class="tea">TEACHERS</p>
+<div *ngFor="let teacher of allTeachers">
+  
+  <ul>  
+    <li> {{teacher.name}} {{teacher.subject}}</li>
+  </ul>
+  
+
+</div>
+
+<app-schedule></app-schedule>
