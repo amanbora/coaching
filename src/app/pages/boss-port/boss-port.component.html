@@ -1,11 +1,16 @@
-<p class="tea">TEACHERS</p>
+<body>
+  
+
+<h2 class="tea">T E A C H E R S</h2>
 <div *ngFor="let teacher of allTeachers">
   
-  <ul>  
-    <li> {{teacher.name}} {{teacher.subject}}</li>
+  <ul class="teacher">  
+    <li> {{teacher.name}} &nbsp; &nbsp; &nbsp;{{teacher.subject}}</li>
   </ul>
   
 
 </div>
 
 <app-schedule></app-schedule>
+</body>
+

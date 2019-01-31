@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     NavbarComponent,
     ScheduleComponent,
     PieComponent,
-    SubjectDropdownComponent
+    SubjectDropdownComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

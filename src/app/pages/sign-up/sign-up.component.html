@@ -1,18 +1,45 @@
-<form [formGroup]="signUpForm" (ngSubmit)="signUp($event)">
-    <input type="text" formControlName="email">
-    <input type="password" formControlName="password">
-    <input type="text" formControlName="name">
+
+
+<html>
+    <body>
+
+   
+    <h2 class="head">Sign Up</h2>
+
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp($event)">
+    <div><input type="text" formControlName="email" placeholder="Enter email" class="sty"></div>
+
     
-    <select formControlName="accessLevel">
+    <div><input type="password" formControlName="password" placeholder="Enter password" class="sty"></div>
+
+    <div><input type="text" formControlName="name" placeholder="Full Name" class="sty"></div>
+<div>
+    <select formControlName="accessLevel" class="sty">
         <option value="student">Student</option>
         <option value="teacher">Teacher</option>
         <option value="admin">Admin</option>
     </select>
-    <select formControlName="subject">
+</div>
+   <div>
+    <select formControlName="subject" class="sty">
             <option value="PHYSICS">Physics</option>
             <option value="CHEMISTRY">Chemistry</option>
             <option value="MATHS">Maths</option>
         </select>
-    <button type="submit">Submit</button>
+    </div>
+
+    <!-- <select formControlName="session" class="sty">
+            <option value="first">First</option>
+            <option value="second">Second</option>
+            <option value="third">Third</option>
+        </select>
+    </div> -->
+
+    <button type="submit" >Submit</button>
 
 </form>
+
+
+     
+</body>
+</html>

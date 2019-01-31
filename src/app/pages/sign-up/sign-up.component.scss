@@ -1,0 +1,39 @@
+body
+{
+	background: url(../../../assets/images/visv.png);
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+;  
+	 
+	height: 50em;
+}
+form
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top:100px; 
+}
+
+
+.sty
+{
+	margin: 5px;
+	padding: 10px; 
+}
+.head
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	
+	font-family: Roboto+Mono;
+	font-size: 4em;
+	font-weight: 700;
+	color: black;
+	position: relative;
+}
+button
+{
+	padding: 10px;
+}

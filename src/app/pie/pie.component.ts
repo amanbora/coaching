@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Chart} from 'node_modules/chart.js'
 // import * as CanvasJS from '../../../node_modules/canvasjs';
 
 @Component({
@@ -12,31 +13,31 @@ export class PieComponent implements OnInit {
 
   ngOnInit() {
   
-    // window.onload = function () {
-    //   var chart = new CanvasJS.Chart("chartContainer",
-    //   {
-    //     title:{
-    //       text: "Attendence Record"
-    //     },
-    //     legend: {
-    //       maxWidth: 350,
-    //       itemWidth: 120
-    //     },
-    //     data: [
-    //     {
-    //       type: "pie",
-    //       showInLegend: true,
-    //       legendText: "{indexLabel}",
-    //       dataPoints: [
-    //         { y: 4, indexLabel: "Present " },
-    //         { y: 2, indexLabel: "Absent " },
-    //         { y: 3, indexLabel: "Remaning" }
-    //       ]
-    //     }
-    //     ]
-    //   });
-    //   chart.render();
-    // }
+    var colors = ['#007bff','red','#28a745'];
+    
+    var chDonutData3 = {
+      labels: ['Present', 'Absent', 'Remaining'],
+      datasets: [
+        {
+          backgroundColor: colors.slice(0,3),
+          borderWidth: 0,
+          data: [21, 45, 55]
+        }
+      ]
+  };
+                /* 3 donut charts */
+                var donutOptions = {
+                cutoutPercentage: 85, 
+                legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+                };
+                var chDonut3 = document.getElementById("chDonut3");
+                if (chDonut3) {
+                new Chart(chDonut3, {
+                    type: 'pie',
+                    data: chDonutData3,
+                    options: donutOptions
+                });
+                }
 
   
   }

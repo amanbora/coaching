@@ -1,35 +1,54 @@
+body
+{
+	background-image: linear-gradient(#1D2B64,#F8CDDA);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100em;
+
+
+}
 .head{
-        background-image: url(../../../assets/images/visv.png);
-        background-size: 10%;
+	background:  #1D2B64;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5em;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-weight: bolder;
 }
 
-button{
-        padding: 24px 24px 24px 24px;
-        margin-right: 100px;
-        border-radius: 20px;
-        border-width: 20px;
+.first
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 20px;
 }
 
-.coa{
-        background-color: aliceblue;
+.admin
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 20em;
+	margin-top: 200px;
 }
 
-.stu{
-        background-color: aliceblue;
-}
-.sch{
-        background-color: aliceblue;
+button
+{
+	margin: 10px;
+	padding: 10px;
+	margin-right: 50px;
+	border-radius: 12px;
+	border-width: thick;
+	font-weight:bold;
 }
 
-.att{
-        background-color: aliceblue;
-}
+ul
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 45px;
 
-.admin{
-        margin-top: 50 px;
-}
-.first{
-        display: flex;
-        justify-content: center;
-        align-items: center;
 }

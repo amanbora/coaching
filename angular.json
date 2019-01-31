@@ -47,7 +47,9 @@
               "./node_modules/daterangepicker/moment.min.js",
               "./node_modules/daterangepicker/daterangepicker.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/jquery/src/jquery.js",
               "./src/mm.js"
+              
             ]
           },
           "configurations": {

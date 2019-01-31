@@ -1,16 +1,26 @@
-<div class="head">
-<div class="first">
+<html>
+    <body>
+    <div >
+        <div class="head">
+          TEACHER'S PORTAL
+        </div>
+        <div class="first">
 
-  <button type="button" class="coa">Coarse</button>
-  <button type="button" class="stu">My Students</button>
-  <button type="button" class="att">Track My Attendence</button>
-  <button type="button" class="sch">Schedule</button>
-  <ul>
-    <li *ngFor="let sc of schedule"> {{sc.day}} {{sc.session}}</li>
-  </ul>
-</div>
+        
+          <button type="button" class="coa">Coarse</button>
+          <button type="button" class="stu">My Students</button>
+          <button type="button" class="att" routerLink="./../pie" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Track My Attendence</button>
+          <button type="button" class="sch" routerLink="./../schedule" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Schedule</button>
+          <ul>
+            <li *ngFor="let sc of schedule"> {{sc.day}} {{sc.session}}</li>
+          </ul>
+        </div>
+        
+        <div class="admin">
+            <img src="./../../../assets/images/teach2.png">        </div>
+        </div>
 
-<div class="admin">
-    <img  class=".img-responsive" src="../../../assets/images/admin.png">
-</div>
-</div>
+      </body>
+
+</html>
+

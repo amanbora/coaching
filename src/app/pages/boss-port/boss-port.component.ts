@@ -18,7 +18,7 @@ export class BossPortComponent implements OnInit {
   getAllTeachers() {
     this.scheduleService.getTeacherList().then(res => {
       this.allTeachers = res;
-      debugger;
+
     });
   }
 
